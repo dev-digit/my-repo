@@ -1,0 +1,134 @@
+.mode-selector {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.mode-selector h3 {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.modes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mode-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mode-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.mode-item.selected {
+  background: rgba(99, 102, 241, 0.3);
+  border-color: rgba(99, 102, 241, 0.5);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+}
+
+.mode-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.mode-icon {
+  font-size: 24px;
+  line-height: 1;
+  opacity: 0.8;
+}
+
+.mode-info {
+  flex: 1;
+}
+
+.mode-info h4 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.mode-info p {
+  margin: 0;
+  font-size: 13px;
+  opacity: 0.8;
+  line-height: 1.4;
+}
+
+.mode-examples {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.loading-examples {
+  text-align: center;
+  opacity: 0.7;
+  font-style: italic;
+  font-size: 13px;
+}
+
+.examples-description {
+  margin: 0 0 10px 0;
+  font-size: 13px;
+  opacity: 0.8;
+  font-style: italic;
+}
+
+.example-prompts h5 {
+  margin: 0 0 8px 0;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.example-prompt {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 8px 10px;
+  font-size: 12px;
+  margin-bottom: 5px;
+  font-style: italic;
+  opacity: 0.9;
+  border-left: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.example-prompt:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .mode-selector {
+    padding: 15px;
+  }
+
+  .mode-header {
+    gap: 10px;
+  }
+
+  .mode-icon {
+    font-size: 20px;
+  }
+
+  .mode-info h4 {
+    font-size: 15px;
+  }
+
+  .mode-info p {
+    font-size: 12px;
+  }
+}
